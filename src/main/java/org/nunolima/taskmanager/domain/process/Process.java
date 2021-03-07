@@ -1,8 +1,10 @@
-package org.nunolima.taskmanager.domain;
+package org.nunolima.taskmanager.domain.process;
+
+import org.nunolima.taskmanager.domain.Priority;
 
 import java.util.UUID;
 
-public abstract class Process {
+public class Process implements AbstractProcess {
     private final String pid;
     private final Priority priority;
 
@@ -11,10 +13,12 @@ public abstract class Process {
         this.priority = priority;
     }
 
+    @Override
     public String getPid() {
         return pid;
     }
 
+    @Override
     public Priority getPriority() {
         return priority;
     }
