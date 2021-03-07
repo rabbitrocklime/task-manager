@@ -42,6 +42,8 @@ public class DefaultTaskManagerTest {
 
         victim.kill(process.getPid());
         assertEquals(victim.getProcessCount(), 0);
+
+        assertThrows(() -> victim.kill("No process"));
     }
 
     @Test

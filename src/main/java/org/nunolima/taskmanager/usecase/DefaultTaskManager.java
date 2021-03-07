@@ -28,7 +28,7 @@ public class DefaultTaskManager implements TaskManagerPort {
     public void add(Process process) throws TaskManagerException {
         if (runningProcesses.size() + 1 > capacity) {
             NoMoreResourcesException noMoreResourcesException = new NoMoreResourcesException();
-            LOGGER.warn("Capacity exceeded", noMoreResourcesException);
+            LOGGER.warn("Capacity exceeded:", noMoreResourcesException);
             throw noMoreResourcesException;
         }
         runningProcesses.add(new RunningProcess(process));

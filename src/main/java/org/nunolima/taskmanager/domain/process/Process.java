@@ -13,6 +13,11 @@ public class Process implements AbstractProcess {
         this.priority = priority;
     }
 
+    public Process(String pid, Priority priority) {
+        this.pid = pid;
+        this.priority = priority;
+    }
+
     @Override
     public String getPid() {
         return pid;
@@ -21,5 +26,13 @@ public class Process implements AbstractProcess {
     @Override
     public Priority getPriority() {
         return priority;
+    }
+
+    @Override
+    public String toString() {
+        return "Process{" +
+                "pid='" + pid + '\'' +
+                ", priority=" + priority +
+                '}';
     }
 }

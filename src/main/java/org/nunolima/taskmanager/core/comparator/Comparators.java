@@ -6,11 +6,11 @@ import java.util.Comparator;
 
 public interface Comparators {
     static Comparator<RunningProcess> ageComparator() {
-        return Comparator.comparing(RunningProcess::getCreation);
+        return Comparator.comparing(RunningProcess::getCreatedAt);
     }
 
     static Comparator<RunningProcess> priorityComparator() {
-        return Comparator.comparing(RunningProcess::getPriority).reversed();
+        return Comparator.comparing(RunningProcess::getPriority);
     }
 
     static Comparator<RunningProcess> pidComparator() {

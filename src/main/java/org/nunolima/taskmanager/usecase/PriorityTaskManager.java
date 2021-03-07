@@ -27,10 +27,11 @@ public class PriorityTaskManager extends DefaultTaskManager {
                     .map(runningProcesses::remove)
                     .orElseThrow(() -> {
                         NoMoreResourcesException noMoreResourcesException = new NoMoreResourcesException();
-                        LOGGER.warn("Capacity exceeded", noMoreResourcesException);
+                        LOGGER.warn("Capacity exceeded:", noMoreResourcesException);
                         return noMoreResourcesException;
                     });
         }
+
         runningProcesses.add(new RunningProcess(process));
         LOGGER.info("Process: {} added", process);
     }

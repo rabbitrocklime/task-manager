@@ -3,15 +3,22 @@ package org.nunolima.taskmanager.domain.process;
 import java.time.Instant;
 
 public class RunningProcess extends ProcessDecorator {
-    private final Instant creation;
+    private final Instant createdAt;
 
     public RunningProcess(Process process) {
         super(process);
-        this.creation = Instant.now();
+        this.createdAt = Instant.now();
     }
 
-    public Instant getCreation() {
-        return creation;
+    public Instant getCreatedAt() {
+        return createdAt;
     }
 
+    @Override
+    public String toString() {
+        return "RunningProcess{" +
+                "process=" + process +
+                ", createdAt=" + createdAt +
+                '}';
+    }
 }
