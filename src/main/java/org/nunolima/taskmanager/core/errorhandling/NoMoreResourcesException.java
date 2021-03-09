@@ -4,8 +4,4 @@ public class NoMoreResourcesException extends TaskManagerException {
 
     public NoMoreResourcesException() {
     }
-
-    public NoMoreResourcesException(String message) {
-        super(message);
-    }
 }
