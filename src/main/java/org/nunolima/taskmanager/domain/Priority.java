@@ -1,7 +1,7 @@
 package org.nunolima.taskmanager.domain;
 
 public enum Priority {
-    // Linux and UNIX® systems use a priority system with 40 priorities (See README), ranging from -20 (highest priority)
+    // Linux and UNIX® systems use a priority system with 40 priorities, ranging from -20 (highest priority)
     // to 19 (lowest priority).
 
     LOW(15),
