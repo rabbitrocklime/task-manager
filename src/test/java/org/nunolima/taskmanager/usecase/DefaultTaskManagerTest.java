@@ -1,4 +1,4 @@
-package org.nunolima.taskmanager;
+package org.nunolima.taskmanager.usecase;
 
 import org.nunolima.taskmanager.core.errorhandling.NoMoreResourcesException;
 import org.nunolima.taskmanager.core.errorhandling.ProcessNotFoundException;

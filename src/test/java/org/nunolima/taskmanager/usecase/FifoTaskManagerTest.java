@@ -1,4 +1,4 @@
-package org.nunolima.taskmanager;
+package org.nunolima.taskmanager.usecase;
 
 import org.nunolima.taskmanager.core.comparator.Comparators;
 import org.nunolima.taskmanager.domain.Priority;

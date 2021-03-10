@@ -1,10 +1,9 @@
-package org.nunolima.taskmanager;
+package org.nunolima.taskmanager.usecase;
 
 import org.nunolima.taskmanager.core.comparator.Comparators;
 import org.nunolima.taskmanager.core.errorhandling.TaskManagerException;
 import org.nunolima.taskmanager.domain.Priority;
 import org.nunolima.taskmanager.domain.process.Process;
-import org.nunolima.taskmanager.usecase.PriorityTaskManager;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
